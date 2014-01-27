@@ -1,0 +1,143 @@
+/*GRID SYSTEM*/
+/*DO NOT CHANGE*/
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.frame { width: 100%;}
+
+.col1 { width: 100%;}
+.col2 { width: 50%;}
+.col3 { width: 33.33%;}
+.col66 { width: 66.66%;}
+.col25 { width: 25%;}
+.col75 { width: 75%;}
+
+[class*='col'] {
+	float: left;
+	padding: 0.3em;
+}
+
+.frame:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*CUSTOM STYLES*/
+
+body {
+	background-color: #FBCF61;
+	font-family: "myriadpro", Arial;
+}
+
+.frame {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #1E1E1E;
+	height: 80px;
+	padding-top: 8px;
+}
+
+header, header a, header a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+header a:hover {
+	color: #969696;
+}
+
+.main-nav {
+	list-style-type: none;
+	float: right;
+	font-family: entypo;
+	font-size: 40px;
+}
+
+.main-nav li {
+	display: inline;
+}
+
+.current a, .current a:visited {
+	color: #969696;
+	text-decoration: underline;
+}
+
+.main-content {
+	text-align: center;
+	color: #FFFFFF;
+	padding: 80px;
+}
+
+.main-content h1 {
+	color: #1E1E1E;
+	padding: 20px;
+}
+
+.round {
+	height: 15em;
+	border-radius: 100%;
+}
+
+@font-face {
+font-family: "entypo";
+src: url(fonts/entypo.woff);
+}
+
+@font-face {
+font-family: "entypo-social";
+src: url(fonts/entypo-social.woff);
+}
+
+@font-face {
+font-family: "myriadpro";
+src: url(fonts/MyriadPro-Regular.ttf);
+}
+
+.iconfont {
+	font-family: entypo;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 120px;
+}
+
+.iconfont:hover {
+	color: #969696;
+}
+
+.iconfont-social {
+	font-family: entypo-social;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 120px;
+}
+
+.iconfont-social:hover {
+	color: #969696;
+}
+
+.link-block {
+	text-align: center;
+}
+
+footer {
+	background-color: #FFFFFF;
+	color: #1E1E1E;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+}
+
+.copy {
+	float: right;
+}
